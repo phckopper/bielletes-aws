@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>bielletes</title>
+<style>
+body
+{
+background-color:red;
+}
+</style>
+</head>
+
+<script>
+
+
+function myFunction()
+{
+document.getElementById("demo").innerHTML="<img src=images.jpg>";
+}
+
+function myFunction2()
+{
+alert("não clica aqui, animal");
+}
+function myFunction3()
+{
+document.getElementById("demo3").innerHTML=prompt("qual é a sua comida predileta?");
+}
+function myFunction4()
+{
+var resposta = prompt("Digite a senha aqui");
+if (resposta === "bielletes é o cara mais bonito do mundo!"){
+document.getElementById("demo2").innerHTML="Voce acertou a senha!";
+}
+else {
+document.getElementById("demo2").innerHTML="Errou, noob";
+}
+}
+function myFunction5()
+{
+document.getElementById("demo4").innerHTML=Math.floor(Math.random()*999999);
+}
+</script>
+<body>
+<h3>
+<p id="demo"></p>
+<p id="demo2">tente acertar a senha em: qual a senha secreta?</p>
+<p id="demo3">minha comida predileta é:</p>
+<a href="minecraft.exe">clicando aqui</a> você vai baixar minecraft original sem ser redirecionado!
+<p id="demo4">Clique no botão para receber um número aleatório</p>
+</h3>
+
+<button onclick="myFunction5()" id="demo4">fazer novamente</button>
+
+<button type="button" onclick="myFunction()">foto</button>
+
+<button type="button" onclick="myFunction2()">clica aqui</button>
+
+<button type="button" onclick="myFunction3()">comida</button>
+
+<button type="button" onclick="myFunction4()">qual a senha secreta?</button>
+
+</body>
+</html> 
